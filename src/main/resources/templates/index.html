@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>PetClinic Web App</title></head>
+<body>
+	<H1>Welcome to Pet Clinic Web App</H1>
+	<i>Current date and time:</i><span id="datetime"></span>
+	<script>
+        const now = new Date();
+        const currentDateTime = now.toLocaleString();
+        document.querySelector('#datetime').textContent = currentDateTime;
+    </script>
+</body>
+</html>
