@@ -40,7 +40,7 @@ jobs:
           version: '>= 363.0.0'
 
       - name: 'Use gcloud CLI'
-        run: 'gcloud info'
+        run: 'gcloud info; gcloud auth list'
         
       - name: 'Use gsutil'
         run: 'gsutil cat gs://amazing-centaur-249212/output-00000-of-00001'
