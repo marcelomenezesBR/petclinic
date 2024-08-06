@@ -41,7 +41,7 @@ jobs:
           version: '>= 363.0.0'
 
       - name: 'Use gcloud CLI'
-        run: 'gcloud info; gcloud auth list'
+        run: 'gcloud info; gcloud auth list;gcloud storage ls gs://amazing-centaur-249212/'
         
       - name: 'Use gsutil'
         run: 'gcloud storage ls gs://amazing-centaur-249212/'
