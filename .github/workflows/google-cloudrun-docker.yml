@@ -33,3 +33,14 @@ jobs:
       # BEGIN - Docker auth and build (NOTE: If you already have a container image, these Docker steps can be omitted)
       - name: my-step
         run: echo "Hello World!"
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
+        with:
+          version: '>= 363.0.0'
+
+      - name: 'Use gcloud CLI'
+        run: 'gcloud info'
+        
+      - name: 'Use gsutil'
+        run: 'gsutil cat gs://amazing-centaur-249212/output-00000-of-00001'
